@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "declaration": true,
+        "emitDecoratorMetadata": true,
+        "exactOptionalPropertyTypes": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "incremental": true,
+        "module": "esnext",
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noUncheckedIndexedAccess": false,
+        "outDir": "./dist",
+        "removeComments": true,
+        "sourceMap": true,
+        "strict": false,
+        "target": "es2015",
+        "skipLibCheck": true
+    },
+    "exclude": ["./dist", "./node_modules", "rr-scripts.ts", "./__tests__", "./__tests-utils__", "**/*.spec.ts"]
+}

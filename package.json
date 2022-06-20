@@ -1,0 +1,42 @@
+{
+  "name": "primeng-to-prisma",
+  "version": "0.0.1",
+  "description": "Simple library for mapping parameters returned from PrimeNG table to prisma query arguments",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && npx rollup -c ./config/rollup.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateuszkepka/primeng-to-prisma.git"
+  },
+  "author": "Mateusz Kępka",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/main.js",
+    "module": "dist/main.module.js",
+    "browser": {
+        "./dist/main.js": "./dist/main.browser.js",
+        "./dist/main.module.js": "./dist/main.module.js"
+    },
+    "types": "dist/main.d.ts",
+  "bugs": {
+    "url": "https://github.com/mateuszkepka/primeng-to-prisma/issues"
+  },
+  "homepage": "https://github.com/mateuszkepka/primeng-to-prisma#readme",
+  "devDependencies": {
+    "primeng": "^13.4.1",
+    "@rollup/plugin-typescript": "8.3.3",
+    "rollup": "2.75.7",
+    "rollup-plugin-terser": "7.0.2",
+    "typescript": "4.7.4"
+  },
+  "peerDependencies": {
+    "primeng": "^13.4.1"
+  },
+  "dependencies": {
+    "tslib": "2.4.0"
+  }
+}
